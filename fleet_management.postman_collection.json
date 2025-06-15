@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "b9811ed9-0ba8-4a8f-9b73-60a7b09a581b",
+		"name": "fleet_management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3272703"
+	},
+	"item": [
+		{
+			"name": "last vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vehicles/:vehicle_id/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles",
+						":vehicle_id",
+						"location"
+					],
+					"variable": [
+						{
+							"key": "vehicle_id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vehicle history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vehicles/:vehicle_id/history?start&end",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles",
+						":vehicle_id",
+						"history"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": null
+						},
+						{
+							"key": "end",
+							"value": null
+						}
+					],
+					"variable": [
+						{
+							"key": "vehicle_id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
